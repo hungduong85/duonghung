@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog D. Dog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        .section {
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .content {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .image img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        form input {
+            margin-top: 5px;
+            display: block;
+            padding: 5px;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dog D. Dog</h1>
+    
+    <div class="section">About</div>
+    <div class="content">
+        <p>Woof woof!</p>
+        <p>Hi, I'm Dog. I love <span class="bold">User Interface Design</span>.</p>
+    </div>
+    
+    <div class="section">Courses</div>
+    <div class="content container">
+        <div>
+            <p>Here are some courses I've taken:</p>
+            <table>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Title</th>
+                    <th>Semester Taken</th>
+                </tr>
+                <tr>
+                    <td>6.813</td>
+                    <td><a href="#">User Interface Design</a></td>
+                    <td><a href="#">Spring 2014</a></td>
+                </tr>
+                <tr>
+                    <td>6.034</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td>6.006</td>
+                    <td>Introduction to Algorithms</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="bold">Listener</td>
+                </tr>
+                <tr>
+                    <td>6.867</td>
+                    <td>Machine Learning</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td>6.830</td>
+                    <td>Database Systems</td>
+                    <td>Fall 2012</td>
+                </tr>
+            </table>
+        </div>
+        <div class="image">
+            <img src="picture/dog1.jpg" alt="Science Dog">
+        </div>
+    </div>
+    
+    <div class="section">Interests</div>
+    <div class="content">
+        <p>I am interested <span class="bold">HCI</span>, memes, and youtube videos.</p>
+    </div>
+    
+    <div class="section">Submit Pet Information</div>
+    <div class="content">
+        <p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+        <form>
+            Name: <input type="text" name="name">
+            Phylum: <input type="text" name="phylum">
+            Gender: <input type="text" name="gender">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
